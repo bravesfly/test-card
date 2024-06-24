@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --card-color-1: #cb2d3e;
+    --card-color-2: #ef4744;
+    --input-size: 300px;
+    --input-color: #2832c3;
+}
+
+*{
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(223, 223, 223);
+}
+.space{
+    width: 1px;
+    height: 350px;
+    position: relative;
+}
+/* header{
+    width: 100%;
+    height: 250px;
+    position: fixed;
+    top: 0;
+
+    z-index: 3;
+
+    background-color: rgba(0, 0, 0, 0.7);
+} */
+
+
+
+
+
+/* INPUT AREA */
+.details{
+    margin: 50px 0;
+    font-weight: 200;
+    display: grid;
+    justify-content: center;
+}
+.details .input-data{
+    height: 40px;
+    width: var(--input-size);
+    position: relative;
+    margin: 20px 0;
+}
+.details .input-data input{
+    width: var(--input-size);
+    font-size: 17px;
+    border-bottom: thin solid var(--input-color);
+    padding: 3px 0;
+    padding-left: 3px;
+}
+.details .input-data label{
+    position: absolute;
+    bottom: 40px;
+    left: 2px;
+    
+    color: var(--input-color);
+
+    transition: ease-in-out 0.3s;
+
+    cursor: text;
+}
+.details .input-data input:placeholder-shown ~ label{
+    bottom: 18px;
+    left: 2px;
+}
+.details .input-data input:placeholder-shown{
+    padding-left: 1px;
+}
+.details .input-data .inputFlag{
+    width: 80px;
+}
+
+.details .numberInput{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr auto;
+}
+
+.details .numberInput input{
+    display: inline;
+    width: 50px;
+}
+
+.details .colorInput{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.details .colorInput input{
+    display: inline;
+    width: 90%;
+    border-bottom: thin solid var(--card-color-1);
+}
+.details .colorInput label{
+    color: var(--card-color-1);
+}
+.details .colorInput input:last-child{
+    border-bottom: thin solid var(--card-color-2);
+}
+
+/* FOOTER */
+footer{
+    padding: 20px 10px;
+    text-align: center;
+
+    font-weight: 200;
+}
+
+
+/* GITHUB CORNER FROM https://github.com/tholman/github-corners */
+
+.github-corner{
+    position: fixed;
+    z-index: 5;
+}
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-25deg);
+    }
+
+    40% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(-25deg);
+    }
+
+    80% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+        animation: none;
+    }
+
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+    }
+}
