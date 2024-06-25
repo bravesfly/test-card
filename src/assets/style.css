@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
 
 :root{
-    --card-color-1: #cb2d3e;
-    --card-color-2: #ef4744;
+    --card-color-1: #ef4744;
+    --card-color-2: #336cd6;
     --input-size: 300px;
     --input-color: #2832c3;
 }
